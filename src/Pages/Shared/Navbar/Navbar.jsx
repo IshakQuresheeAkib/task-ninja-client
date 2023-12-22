@@ -29,13 +29,13 @@ const Navbar = () => {
                         <li><NavLink to='/'>Item 1</NavLink></li> 
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl">TaskNinja</a>
+                <h3 className="text-4xl">TaskNinja</h3>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-8">
-                    <li><NavLink to='/'>Item 1</NavLink></li>                   
-                    <li><NavLink to='/'>Item 1</NavLink></li>                   
-                    <li><NavLink to='/'>Item 1</NavLink></li>                   
+                    <li><NavLink to='/' className='text-white'>Home</NavLink></li>                   
+                    <li><NavLink to='/meet-our-users' className='text-white'>Meet Our Users</NavLink></li>                   
+                    <li><NavLink to='/about-us' className='text-white'>About Us</NavLink></li>
                 </ul>
             </div>
             {
