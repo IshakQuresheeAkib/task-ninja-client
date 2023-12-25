@@ -27,15 +27,11 @@ const MeetOurUsers = () => {
                         <dt>
                             <div
                                 className="absolute flex items-center justify-center h-12 w-12 rounded-md text-5xl text-blue-500/90">
-                                <CiBank />
+                                <CiBank/>
                             </div>
-                            <p className="font-heading ml-16 text-2xl leading-6 font-bold text-white/90">Bankers</p>
+                            <p className="font-heading ml-16 text-3xl leading-6 font-bold text-white/90">Bankers</p>
                         </dt>
-                        <dd className="mt-2 ml-16 text-xs text-blue/90">
-                            Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.
-                        </dd>
+                        <dd className="mt-2 ml-16 text-sm text-white/80">TaskNinja helps bankers manage tasks better. It helps prioritize time, collaborate on projects easily, and track deadlines. It improves client relationships, keeps documents in one place, and makes workflows smoother. The simple interface makes it easy to use, boosting productivity and organization in banking.</dd>
                     </div>
                     <div className="relative">
                         <dt>
@@ -43,12 +39,9 @@ const MeetOurUsers = () => {
                                 className="absolute flex items-center justify-center h-12 w-12 rounded-md text-5xl text-blue-500/90">
                                 <HiBuildingOffice2/>
                             </div>
-                            <p className="font-heading ml-16 text-2xl leading-6 font-bold text-white/90"> Corporate Professionals</p>
+                            <p className="font-heading ml-16 text-3xl leading-6 font-bold text-white/90"> Corporate Professionals</p>
                         </dt>
-                        <dd className="mt-2 ml-16 text-xs text-white/90"> Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.
-                        </dd>
+                        <dd className="mt-2 ml-16 text-sm text-white/80">TaskNinja is your go-to tool for corporate tasks. It makes managing time, teamwork, and deadlines a breeze. Plus, it improves client interactions, organizes documents, and simplifies work. With an easy-to-use interface, it boosts productivity for corporate professionals.</dd>
                     </div>
                     <div className="relative">
                         <dt>
@@ -57,13 +50,10 @@ const MeetOurUsers = () => {
                                 <GoCodeReview/>
 
                             </div>
-                            <p className="font-heading ml-16 text-2xl leading-6 font-bold text-white/90">Developers
+                            <p className="font-heading ml-16 text-3xl leading-6 font-bold text-white/90">Developers
                             </p>
                         </dt>
-                        <dd className="mt-2 ml-16 text-xs text-white/90"> Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.
-                        </dd>
+                        <dd className="mt-2 ml-16 text-sm text-white/80">TaskNinja is like a helper for software developers. It makes managing tasks easy by helping with time, teamwork on projects, and keeping track of deadlines. It also makes dealing with clients better, keeps documents in one place, and makes work smoother.</dd>
                     </div>
                     <div className="relative">
                         <dt>
@@ -72,12 +62,9 @@ const MeetOurUsers = () => {
                                 <FaBusinessTime />
 
                             </div>
-                            <p className="font-heading ml-16 text-2xl leading-6 font-bold text-white/90">Business Person</p>
+                            <p className="font-heading ml-16 text-3xl leading-6 font-bold text-white/90">Business Person</p>
                         </dt>
-                        <dd className="mt-2 ml-16 text-xs text-white/90"> Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.
-                        </dd>
+                        <dd className="mt-2 ml-16 text-sm text-white/80">For business folks, TaskNinja is your task buddy. It makes time, teamwork, and deadlines a walk in the park. It amps up client interactions, tidies up documents, and simplifies work. Easy to use, it's a productivity boost for business people.</dd>
                     </div>
                 </dl>
             </div>

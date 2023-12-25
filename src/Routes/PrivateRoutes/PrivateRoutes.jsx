@@ -1,18 +1,14 @@
 import { Navigate } from "react-router-dom";
-import Lottie from "lottie-react";
-import loadingAnim from '../../assets/Loader.json'
 import useAuth from "../../Hook/useAuth";
+import Loader from "../../Components/Loader/Loader";
 
 
 const PrivateRoutes = ({children}) => {
     
     const {user,loading} = useAuth();
     
-    
     if (loading) {
-        return <div className="h-screen w-screen flex justify-center items-center">
-        <Lottie animationData={loadingAnim} className="w-96"></Lottie>
-    </div>        
+        return <Loader></Loader>      
     }
 
     if (!user) {

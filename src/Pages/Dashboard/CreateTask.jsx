@@ -1,11 +1,11 @@
 import Lottie from "lottie-react";
 import addTask from '../../assets/Animation - 1703192629996.json'
 import { useForm } from "react-hook-form";
-import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../Hook/useAxiosPublic";
 import useAuth from '../../Hook/useAuth'
+import { toast } from "react-toastify";
 
-const CreateTask = () => {
+const CreateTask = ({refetch}) => {
 
     const {user} = useAuth();
     const {register,handleSubmit,formState: { errors }} = useForm()
@@ -14,15 +14,17 @@ const CreateTask = () => {
     const onSubmit = task => {
         console.log(task);
 
-        axiosPublic.post('/to-do',{...task,email:user?.email})
+        axiosPublic.post('/tasks/to-do',{...task,email:user?.email})
         .then(data=>{
-            console.log(data?.data);
+            if (data?.data.insertedId) {
+                toast.success('Task Added Successfully!')
+            }
+            refetch()
         })
         .catch(err=>{
             console.log(err);
         })
         
-
         document.getElementById('my_modal_1').close() 
     }
 
